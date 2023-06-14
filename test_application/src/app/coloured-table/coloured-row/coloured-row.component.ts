@@ -1,10 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-
-export interface TableRow{
-  id: number;
-  info: string;
-  created_dt: Date;
-}
+import {TableRow} from "./table-row";
 
 
 @Component({

@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {TableRow} from "./coloured-row/coloured-row.component";
+
+import {TableRow} from "./coloured-row/table-row";
 
 
 @Component({
@@ -14,17 +15,17 @@ export class ColouredTableComponent implements OnInit{
       this.rows_list = [
         {
           id: 1,
-          info: 'one',
+          info: 'one         f',
           created_dt: new Date(),
         },
         {
           id: 2,
-          info: 'two',
+          info: 'two             f',
           created_dt: new Date(),
         },
         {
           id: 3,
-          info: 'three',
+          info: 'three             f',
           created_dt: new Date(),
         },
       ]

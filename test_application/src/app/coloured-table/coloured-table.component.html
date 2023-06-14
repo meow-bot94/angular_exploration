@@ -1,10 +1,13 @@
-<div>
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Info</th>
-      <th>Created Datetime</th>
-    </tr>
-    <app-coloured-row *ngFor="let row of rows_list" [table_row]="row"></app-coloured-row>
-  </table>
-</div>
+<table class="table-responsive">
+  <tr>
+    <th>ID</th>
+    <th>Info</th>
+    <th>Created Datetime</th>
+  </tr>
+<!--  <app-coloured-row *ngFor="let row of rows_list" [table_row]="row"></app-coloured-row>-->
+  <tr *ngFor="let row of rows_list; let e=even" [ngClass]="e? 'even': 'odd'">
+    <td>{{row.id | number: '.0-0'}}</td>
+    <td>{{row.info}}</td>
+    <td>{{row.created_dt | date : 'yyyy-MM-dd' }}</td>
+  </tr>
+</table>
