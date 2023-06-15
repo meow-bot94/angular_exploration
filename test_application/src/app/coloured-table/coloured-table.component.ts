@@ -15,17 +15,17 @@ export class ColouredTableComponent implements OnInit{
       this.rows_list = [
         {
           id: 1,
-          info: 'one         f',
+          info: 'one wwwwwwwwwwwwwwwwwwwwwwwwwww f',
           created_dt: new Date(),
         },
         {
           id: 2,
-          info: 'two             f',
+          info: 'two wwwwwwwwwwwwwwwwwwwwwwwwwwwww f',
           created_dt: new Date(),
         },
         {
           id: 3,
-          info: 'three             f',
+          info: 'three wwwwwwwwwwwwwwwwwwwwwwwwwwww f',
           created_dt: new Date(),
         },
       ]
